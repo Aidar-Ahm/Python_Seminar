@@ -3,12 +3,14 @@
 # Формула для получения n-го члена прогрессии: an = a1 + (n-1) * d.
 # Каждое число вводится с новой строки.
 
-def progression_num(a, n, d): 
-    an = a + (n-1) * d
-    return(an)
+def progression(a, n, d): 
+    list_1 = list()
+    for i in range(n):
+        list_1.append(a + i * d)
+    return list_1
 
 a = int(input('Первое число арифметической прогрессии : '))
 d = int(input('Шаг прогрессии : '))
-n = int(input('Искомый элемент на позиции  : '))
+n = int(input('Колличество элементов: '))
 
-print(f'n - ый элемент равен {progression_num(a, n, d)}')
+print(progression(a, n, d))
