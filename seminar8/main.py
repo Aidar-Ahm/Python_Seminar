@@ -36,6 +36,7 @@ def user_interface():
             append_contact(base)
         elif input1 == 3:
             search_contact(base)
+
         else:
             print('Некоректный ввод')
 
